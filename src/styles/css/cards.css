@@ -1,0 +1,61 @@
+.container {
+    padding-top: 50px;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    background-color: #dce1e6;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Rubik", sans-serif;
+}
+
+.hero-image {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 40%;
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-large {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.icon-spacing {
+      margin-left: 5px;
+    }
+.black-text.h1{
+    font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style:inherit;
+}
+.description {
+    background-color: #101820;
+    color: #FFFFFF; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 20px; 
+}
