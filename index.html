@@ -1,144 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio @ TOTVS</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/css/navbar.css">
-    <link rel="stylesheet" href="src/styles/css/cards.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="src/styles/js/style.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio @ TOTVS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/css/navbar.css">
+  <link rel="stylesheet" href="src/styles/css/cards.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/styles/js/clickPhrase.js"></script>
+  <script src="src/styles/js/eachText.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-wrapper black">
-                <a href="#" class="brand-logo left"><i class="material-icons">school</i>Study</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Por que Study?</a></li>
-                    <li><a href="#">Conteúdos Gratuitos</a></li>
-                    <li><a href="#">Para Empresas</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#" class="btn white black-text">Entrar</a></li>
-                    <li><a href="#" class="btn teal">Criar conta</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="section">
-                <h1 class="black-text h1">Cursos de Tecnologia!</h1>
-                <p class="black-text">Mergulhe em conteúdo com a maior comunidade de tecnologia do país.</p>
-                <a class="btn-large waves-effect waves-light teal" id="ver-planos-btn" href="#">Veja os Planos</a>
-            </div>
-            <div class="row">
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title green-text">
-                        Escola<i class="material-icons icon-spacing">school</i><br>PROGRAMAÇÃO
-                      </span>
-                      <p>Lógica, Python, PHP, Java, .NET, Node JS, C, Computação, Jogos, IoT e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/f4Uh9r6.png" target="_blank">Programação</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title blue-text">
-                        Escola<i class="material-icons icon-spacing">code</i><br>FRONT-END
-                      </span>
-                      <p>HTML, CSS, React, Angular, JavaScript, jQuery e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/tHOhk0h.png" target="_blank">Front-end</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title lime-text">
-                        Escola<i class="material-icons icon-spacing">insights</i><br>DATA SCIENCE
-                      </span>
-                      <p>Ciência de dados, BI, SQL e Banco de Dados, Excel, Machine Learning, NoSQL, Estatística e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/qmz2UZD.png" target="_blank">DataScience</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title purple-text">
-                        Escola<i class="material-icons icon-spacing">smart_toy</i><br>INTELIGÊNCIA ARTIFICIAL
-                      </span>
-                      <p>IA para Programação, IA para Dados e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/df6tsWS.png" target="_blank">IA</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title red-text">
-                        Escola<i class="material-icons icon-spacing">cloud</i><br>DEVOPS
-                      </span>
-                      <p>AWS, Azure, Docker, Segurança, IaC, Linux e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/4Qw0Ntm.png" target="_blank">DevOps</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title pink-text">
-                        Escola<i class="material-icons icon-spacing">palette</i><br>UX & DESIGN
-                      </span>
-                      <p>Usabilidade e UX, Vídeo e Motion, 3D e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/xXLJK3q.png" target="_blank">UX & Design</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title yellow-text">
-                        Escola<i class="material-icons icon-spacing">smartphone</i><br>MOBILE
-                      </span>
-                      <p>React Native, Flutter, iOS e Swift, Android, Kotlin, Jogos e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/AGIce40.png" target="_blank">Mobile</a></figcaption>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card black darken-1">
-                      <div class="card-content white-text">
-                        <span class="card-title yellow-text">
-                          Escola<i class="material-icons icon-spacing">engineering</i><br>ENGENHARIA DE SOFTWARE
-                        </span>
-                        <p>DDD, CQRS, Boas práticas, Clean-Code, Clean Architeture.</p>
-                      </div>
-                    </div>
-                    <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/kBQl7sp.png" target="_blank">Engenharia</a></figcaption>
-                  </div>
-                <div class="col s12 m6 l4">
-                  <div class="card black darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title orange-text">
-                        Escola<i class="material-icons icon-spacing">lightbulb</i><br>INOVAÇÃO & GESTÃO
-                      </span>
-                      <p>Métodos Ágeis, Softskills, Liderança e Gestão, Startups, Vendas e mais...</p>
-                    </div>
-                  </div>
-                  <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/GXhiIFB.png" target="_blank">INV & Gestão</a></figcaption>
-                </div>
+  <header>
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo left"><i class="material-icons">school</i>Study</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Por que Study?</a></li>
+          <li><a href="#">Conteúdos Gratuitos</a></li>
+          <li><a href="#">Para Empresas</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="#" class="btn white black-text">Entrar</a></li>
+          <li><a href="#" class="btn teal">Criar conta</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="section">
+        <h1 class="black-text h1">Cursos de Tecnologia!</h1>
+        <p class="black-text">Mergulhe em conteúdo com a maior comunidade de tecnologia do país.</p>
+        <a class="btn-large waves-effect waves-light teal" id="ver-planos-btn" href="#">Veja os Planos</a>
+      </div>
+      <div class="row" id="rows">
+        <div class="row group-1" id="group-1">
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title green-text">
+                  Escola<i class="material-icons icon-spacing">school</i><br>PROGRAMAÇÃO
+                </span>
+                <p>Lógica, Python, PHP, Java, .NET, Node JS, C, Computação, Jogos, IoT e mais...</p>
               </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/f4Uh9r6.png"
+                target="_blank">Programação</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title blue-text">
+                  Escola<i class="material-icons icon-spacing">code</i><br>FRONT-END
+                </span>
+                <p>HTML, CSS, React, Angular, JavaScript, jQuery e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/tHOhk0h.png"
+                target="_blank">Front-end</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title lime-text">
+                  Escola<i class="material-icons icon-spacing">insights</i><br>DATA SCIENCE
+                </span>
+                <p>Ciência de dados, BI, SQL e Banco de Dados, Excel, Machine Learning, NoSQL, Estatística e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/qmz2UZD.png"
+                target="_blank">DataScience</a></figcaption>
+          </div>
         </div>
-    </main>
+        <div class="row group-2" id="group-2">
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title purple-text">
+                  Escola<i class="material-icons icon-spacing">smart_toy</i><br>INTELIGÊNCIA ARTIFICIAL
+                </span>
+                <p>IA para Programação, IA para Dados e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/df6tsWS.png"
+                target="_blank">IA</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title red-text">
+                  Escola<i class="material-icons icon-spacing">cloud</i><br>DEVOPS
+                </span>
+                <p>AWS, Azure, Docker, Segurança, IaC, Linux e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/4Qw0Ntm.png"
+                target="_blank">DevOps</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title pink-text">
+                  Escola<i class="material-icons icon-spacing">palette</i><br>UX & DESIGN
+                </span>
+                <p>Usabilidade e UX, Vídeo e Motion, 3D e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/xXLJK3q.png"
+                target="_blank">UX & Design</a></figcaption>
+          </div>
+        </div>
+        <div class="row group-3" id="group-3">
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title yellow-text">
+                  Escola<i class="material-icons icon-spacing">smartphone</i><br>MOBILE
+                </span>
+                <p>React Native, Flutter, iOS e Swift, Android, Kotlin, Jogos e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/AGIce40.png"
+                target="_blank">Mobile</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title yellow-text">
+                  Escola<i class="material-icons icon-spacing">engineering</i><br>ENGENHARIA DE SOFTWARE
+                </span>
+                <p>DDD, CQRS, Boas práticas, Clean-Code, Clean Architeture.</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/kBQl7sp.png"
+                target="_blank">Engenharia</a></figcaption>
+          </div>
+          <div class="col s12 m6 l4">
+            <div class="card black darken-1">
+              <div class="card-content white-text">
+                <span class="card-title orange-text">
+                  Escola<i class="material-icons icon-spacing">lightbulb</i><br>INOVAÇÃO & GESTÃO
+                </span>
+                <p>Métodos Ágeis, Softskills, Liderança e Gestão, Startups, Vendas e mais...</p>
+              </div>
+            </div>
+            <figcaption>Este card apresenta os cursos relacionados à <a href="https://i.imgur.com/GXhiIFB.png"
+                target="_blank">INV & Gestão</a></figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
