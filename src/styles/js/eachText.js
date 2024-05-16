@@ -1,3 +1,5 @@
+
+ // eachText - Efeito de escrita no texto dos cards
 $(document).ready(function(){
     $(".row p").each(function(index){
         var texto = $(this).text();

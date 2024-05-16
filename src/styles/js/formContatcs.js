@@ -1,5 +1,6 @@
+
+// FadeInForm - Efeito de "aparecer" para a section form
 $(document).ready(function(){
-    
     $(".row").hide();
     $(".section").hide();
 
@@ -9,6 +10,8 @@ $(document).ready(function(){
     });
 });
 
+// TextAreaAutoResize - Redimensiona a caixa do campo "Observações" de acordo com a sua extensão
+// TextAreaValidator - Muda a cor de acordo com a validação (Verde ✔️ - Vermelho ❌) e informa os caracteres digitados e o limite
 $(document).ready(function(){
     M.textareaAutoResize($('#textarea1'));
 

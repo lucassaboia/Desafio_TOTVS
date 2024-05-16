@@ -1,3 +1,5 @@
+
+// ClickPhrase - Seletor de palavras pré-definidas que encaixam no contexto das frases
 $(document).ready(function(){
     $("#ver-planos-btn").click(function(){
         var palavras = ["grandes", "inovadores", "exclusivos", "altruístas", "personalizados", "poderosos"];
@@ -9,6 +11,8 @@ $(document).ready(function(){
     });
 });
 
+// FadeInCard - Animação para o card da página principal que cada grupo de cards aparece respectivamente
+// TODO: Melhorar esse código
 $(document).ready(function(){
     
     $("#group-1, #group-2, #group-3").hide();
