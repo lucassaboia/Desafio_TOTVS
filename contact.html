@@ -73,21 +73,20 @@
                             <label class="active" for="telephone">Telefone</label>
                         </div>
                         <div class="input-field col s6">
-                            <i class="material-icons prefix">mail</i>
+                            <i class="material-icons prefix" id="mail">mail</i>
                             <input id="email" type="text" class="validate">
                             <label for="icon_prefix" class="active" for="mail">E-mail</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                          <textarea id="textarea1" class="materialize-textarea" maxlength="300"></textarea>
-                          <label for="textarea1">Observações</label>
-                          <span class="carachter-limit" id="count">Limite de 300 caracteres</span>
+                            <textarea id="textarea1" class="materialize-textarea" maxlength="300"></textarea>
+                            <label for="textarea1">Observações</label>
+                            <span class="carachter-limit" id="count">Limite de 300 caracteres</span>
                         </div>
-                      </div>
+                    </div>
                     <div class="row">
-                        <button class="btn waves-effect waves-light" type="button"
-                            onclick="exibirValores()">Enviar</button>
+                        <button id="submitBtn" class="btn waves-effect waves-light" type="button">Enviar</button>
                     </div>
             </div>
             </form>
