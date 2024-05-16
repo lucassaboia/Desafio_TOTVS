@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="src/styles/css/navbar.css">
     <link rel="stylesheet" href="src/styles/css/contacts.css">
     <script src="src/styles/js/formContatcs.js"></script>
+    <script src="src/styles/js/navbar.js"></script>
 </head>
 
 <body>
@@ -19,6 +20,7 @@
         <nav>
             <div class="nav-wrapper black">
                 <a href="index.html" class="brand-logo left"><i class="material-icons">school</i>Study</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#">Cursos</a></li>
                     <li><a href="#">Por que Study?</a></li>
@@ -30,6 +32,16 @@
                 </ul>
             </div>
         </nav>
+<!-- TODO: Melhorar o visual dessa navbar (prototipar) -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Por que Study?</a></li>
+            <li><a href="#">Conteúdos Gratuitos</a></li>
+            <li><a href="#">Para Empresas</a></li>
+            <li><a href="contact.html">Contato</a></li>
+            <li><a href="#" class="btn white black-text">Entrar</a></li>
+            <li><a href="#" class="btn teal">Criar conta</a></li>
+        </ul>
     </header>
     <main>
         <div class="container">

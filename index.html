@@ -11,12 +11,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="src/styles/js/clickPhrase.js"></script>
   <script src="src/styles/js/eachText.js"></script>
+  <script src="src/styles/js/navbar.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <div class="nav-wrapper black">
-        <a href="#" class="brand-logo left"><i class="material-icons">school</i>Study</a>
+              <a href="index.html" class="brand-logo left"><i class="material-icons">school</i>Study</a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">Cursos</a></li>
           <li><a href="#">Por que Study?</a></li>
@@ -28,6 +30,16 @@
         </ul>
       </div>
     </nav>
+<!-- TODO: Melhorar o visual dessa navbar (prototipar) -->
+      <ul class="sidenav" id="mobile-demo">
+          <li><a href="#">Cursos</a></li>
+          <li><a href="#">Por que Study?</a></li>
+          <li><a href="#">Conteúdos Gratuitos</a></li>
+          <li><a href="#">Para Empresas</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="#" class="btn white black-text">Entrar</a></li>
+          <li><a href="#" class="btn teal">Criar conta</a></li>
+      </ul>
   </header>
   <main>
     <div class="container">
