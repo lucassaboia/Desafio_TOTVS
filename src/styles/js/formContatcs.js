@@ -25,3 +25,36 @@ $(document).ready(function(){
       }
     });
   });
+  
+// TelephoneMask - Define uma máscara para o campo "Telefone"
+  $(document).ready(function(){
+    $('#telephone').mask('(00) 00000-0000');
+});
+
+// ModalCreator - Captura os valores postos nos campos de formulário e imprime na modal
+// TODO: Melhorar esse código
+$(document).ready(function () {
+  $('.modal').modal();
+
+  $('#submitBtn').on('click', function () {
+      var firstName = $('#first_name').val();
+      var lastName = $('#second_name').val();
+      var telephone = $('#telephone').val();
+      var email = $('#email').val();
+      var observations = $('#textarea1').val();
+
+      var modalContent = "Nome: " + firstName + "<p>";
+      var modalContent2 = "Sobrenome: " + lastName + "<br>";
+      var modalContent3 = "Telefone: " + telephone + "<br>";
+      var modalContent4 = "E-mail: " + email + "<br>";
+      var modalContent5 = "Observações: " + observations;
+
+      $('#modalContent').html(modalContent);
+      $('#modalContent2').html(modalContent2);
+      $('#modalContent3').html(modalContent3);
+      $('#modalContent4').html(modalContent4);
+      $('#modalContent5').html(modalContent5);
+
+      $('#modal1').modal('open');
+  });
+});
